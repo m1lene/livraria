@@ -101,8 +101,26 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
+  transition: 0.3s;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+input[type="checkbox"]{
+  display: none;
+}
+
+/*dark*/
+.dark,.dark header{
+  background-color: var(--bs-black);
+  color: var( --bs-body-bg);
+}
+.dark .page-section-heading {
+  color: #fff;;
+}
+
+
+
+
 
 hr {
   margin: 1rem 0;
@@ -8041,7 +8059,7 @@ textarea.form-control-lg {
 
 .text-secondary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba( var(--bs-text-opacity)) !important;
 }
 
 .text-success {
@@ -10834,6 +10852,7 @@ html {
   padding: 6rem 0;
 }
 .page-section .page-section-heading {
+  
   font-size: 2.25rem;
   line-height: 2rem;
 }
