@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/ccsform.css">
+      <link rel="stylesheet" href="css/csspadrao.css"> 
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="index.html">Livraria Santa Maria </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Livros</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Destaques da semana</a></li>
+                        <li><a class="dropdown-item" href="#!">Itens Populares</a></li>
+                        <li><a class="dropdown-item" href="#!">Novos Livros</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="scifi.html">Ficção Científica </a></li>
+                        <li><a class="dropdown-item" href="terror.html">Terror e suspense </a></li>
+                        <li><a class="dropdown-item" href="pgRomance.html">Romance</a></li>
+                        <li><a class="dropdown-item" href="nacional.html">Literatura nacional</a></li>
+                        <li><a class="dropdown-item" href="pgPoesias.html">Livros de Poesia</a></li>
+                        <li><a class="dropdown-item" href="pgBiografias.html">Biografias e autobiografias</a></li>
+                    </ul>
+                </li>
+                <div>
+                    <input type="checkbox" name="change-theme" id="change-theme">
+                    <label class="nav-item nav-link" for="change-theme">
+                       Trocar contraste
+                    </label>
+                </div>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                    Carrinho
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+    <main>
+      
+        <div class="containeri">
+            <div class="form-img">
+                <img src="img/undraw_bookshelves_re_lxoy.svg" alt="">
+            </div>
+            <div class="form">
+         
+            <form action="#" id="myForm">
+                <div class="form-header">
+                <div class="title">
+                    <h1> Cadastre-se</h1>
+                </div>
+                <div class="login-button">
+                    <button><a href="#">Entrar</a></button>
+                </div>
+            </div>
+            
+  
+                  <div class="input-group">
+                      <div class="input-box">
+                          <label for="idname">Nome</label>
+                          <input type="text" name="name" id="idname" placeholder="Digite seu nome" required>
+                      </div>
+                      <div class="input-box">
+                        <label for="idnascimento">Data de nascimento</label>
+                        <input type="date" name="nascimento" id="idnascimento" >
+                      </div>
+                      <div class="input-box">
+                        <label for="idcpf">CPF</label>
+                        <input type="number" name="cpf"  pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})">
+                      </div>
+            
+                      <div class="input-box">
+                          <label for="idtelefone">Telefone</label>
+                          <input type="tel" name="Telefone" id="idtelefone" placeholder="Digite seu Telefone" required>
+                      </div>
+                      
+                      <div class="input-box">
+                        <label for="email">Email para contato</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                      </div>
+                      <div class="input-box">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite uma senha forte" required>
+                    </div>
+
+                     
+                      
+                     
+                </div> <!-- input-group -->
+  
+               
+                
+                <div class="button-group">
+                 
+                  <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+          
+        </div> <!-- container -->
+  
+      </main>
+</body>
+</html>
